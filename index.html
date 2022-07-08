@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>TecnoBairesShop</title>
+
+</head>
+
+<body class="bgbd">
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="Multimedia/img/logo.png" alt="logo de la compañia" class="logo-img">
+            <h2 class="logo-nombre">
+                TecnoBairesShop
+            </h2>
+        </div>
+        <ul class="navbar-nav ">
+            <li class="nav-item dropdown">
+                <img src="Multimedia/img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"></img>
+                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                    <table id="lista-carrito" class="table">
+                        <div class="listadelcarrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                    </div>
+                        <tbody></tbody>
+                    </table>
+                    <div class="botonescarrito">
+                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                            Compra</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <section class="showcase">
+        <div class="video-container">
+            <video src="Multimedia/vid/network_-_27018 (Original).mp4" autoplay="" muted="" loop=""></video>
+        </div>
+        <div class="content">
+            <h1>Bienvenido a TecnoBairesShop</h1>
+            <h2 class="sublogo">Su tienda de confianza</h2>
+        </div>
+    </section>
+
+
+    <!--PROXIMAMENTE REF DE LAS PAGINAS-->
+    <section class="content prod">
+
+        <h2 class="title">Productos</h2>
+        <p class="pperif">Perifericos</p>
+
+        <div class="box-container">
+            <div class="box">
+                
+                <h3>Teclados</h3>
+                <p>Mire nuestras ofertas!</p>
+
+
+                <button type="button" class="btn" onclick="redireccion1()">Click aqui</button>
+            </div>
+            <div class="box">
+                
+                <h3>Auriculares</h3>
+                <p>Mire nuestras ofertas!</p>
+                <button type="button" class="btn" onclick="redireccion2()">Click aqui</button>
+            </div>
+            <div class="box">
+                
+                <h3>Mouse</h3>
+                <p>Mire nuestras ofertas!</p>
+                <button type="button" class="btn" onclick="redireccion3()">Click aqui</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+        <h2 class="display-4 mt-4">Productos Mas Comprados.</h1>
+        <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+    </div>
+
+    <div class="container" id="lista-productos">
+
+        <div  class="d-flex justify-content-center" class="card-deck mb-3  text-center">
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">teclado primus</h4>
+                </div>
+                <div class="card-body">
+                    <img src="Multimedia/img/teclado/tecladoprimus.webp" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio"> $ <span class="">6600</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Tipo de teclado: mecánico</li>
+                        <li>Switch: Red Primus</li>
+                        <li>Color: negro</li>
+                        <li>Retroiluminacion: RGB</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                </div>
+            </div>
+
+
+        </div>
+        
+
+            <div class="d-flex justify-content-center" class="card-deck mb-3 text-center">
+    
+                <div class="card mb-4 shadow-sm ">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">HyperX Cloud</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="Multimedia/img/auriculares/HyperX Alpha.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio"> $ <span class="">14800</span></h1>
+    
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Micrófono flexible incorporado.</li>
+                            <li>Tipo de conector: Jack 3.5 mm</li>
+                            <li>Sonido superior y sin límites.</li>
+                            <li>Cómodos y prácticos</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+    
+    
+            </div>
+
+            <div class="d-flex justify-content-center" class="card-deck mb-3 text-center">
+    
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Teclado HyperX</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="Multimedia/img/teclado/tecladohyperx.webp" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio"> $ <span class="">12000</span></h1>
+    
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Tipo de teclado: mecánico</li>
+                            <li>Función antighosting incorporada</li>
+                            <li>Color: negro</li>
+                            <li>Retroiluminacion: RGB</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+    
+    
+            </div>
+
+
+
+
+    </div>
+
+    <div class="ubi">
+        <h2>Ubicación</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.906360059987!2d-58.470405085271686!3d-34.63180656649089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9eeb510f24f%3A0x5361d93547ccdbf!2sTecnoBaireShop!5e0!3m2!1ses-419!2sar!4v1656642871382!5m2!1ses-419!2sar"
+            width="300" height="275" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer class="footer">
+        <a>
+            ©TecnoBairesShop
+        </a>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+</body>
+
+</html>
